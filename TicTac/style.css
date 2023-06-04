@@ -1,0 +1,79 @@
+/* Стилизация меню. */
+body {
+    margin: 0%;
+    padding: 0%;
+}
+
+.hide {
+    display: none;
+}
+
+.body {
+    background-color:blue;
+}
+
+.body-theme-one {
+    background-image: url(Game-one.jpg); height: 100%; width: 100%;
+}
+
+.starts {
+    width: 20%;
+    height: 20%;
+    position:relative;
+    left: 30%;
+    top: 40vh;
+}
+
+.block {
+    display: block;
+    border-radius: 30%;
+    width: 100%;
+    height: 100vh;;
+    background-image: url(Menu.jpg);
+    background-size: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#style-menu-sl {
+   width: 400px;
+   display: flex;
+   flex-direction: column;
+   
+}
+
+.delete-menu {
+  display: none;
+}
+
+/* Первая игра */
+#table td {
+    height: 20vh;
+    width: 20vh;
+    border: 10px solid black;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#table {
+    display: flex;
+    justify-content: center;
+}
+
+#tic-tac {
+    position: absolute;
+    top: 5vh;
+    left: 65vh
+}
+
+#div-tic-tac {
+    border: 10px solid red;
+    border-radius: 20px;
+    position: relative;
+    right: 10vh;
+    max-width: 15vh;
+    top: 10vh;
+    left: 15vh;
+}

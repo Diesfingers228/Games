@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicTac</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="index.js"></script>
+</head>
+
+<body id="body" class="body" class="" class="">
+<!-- Start-game -->
+<header id="header" class="">
+<button id="start-btn" class="starts">Start</button>
+<button id="exit-btn" class="starts">Exit</button>
+
+<div id="menu" class="hide" >
+<div id="style-menu-sl">
+   <button id="btn1-game">Крестики нолики.</button>
+</div>
+</header>
+<!-- Крестики нолики -->
+<div id="div-tic-tac" style="display: none;">
+    <button style="height: 100px; width: 100px;background-color:antiquewhite" onclick="resetTicTac()" id="reset-tic-tac">Начать заново.</button>
+    <button style="height: 100px; width: 100px;background-color:antiquewhite" onclick="backMenu()" id="back-tic-tac">Вернуться в меню.</button>
+</div>
+<div id="tic-tac" style="display: none">
+    <table id="table">
+        <tr>
+       <td style="font-size: 10vh;"></td>
+       <td style="font-size: 10vh;"></td>
+       <td style="font-size: 10vh;"></td>
+        </tr>
+        <tr>
+       <td style="font-size: 10vh;"></td>
+       <td style="font-size: 10vh;"></td>
+       <td style="font-size: 10vh;"></td>
+        </tr>
+        <tr>
+       <td style="font-size: 10vh;"></td>
+       <td style="font-size: 10vh;"></td>
+       <td style="font-size: 10vh;"></td>
+        </tr>
+    </table>
+    <h1 id="end-tic-tac" style="display: flex;justify-content: center; color: darkred;">Идёт игра.</h1>
+</div>
+</body>
+    
