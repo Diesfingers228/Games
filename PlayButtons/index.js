@@ -6,20 +6,21 @@ let exit = document.getElementById('exit-btn');
 let btnSlTwo = document.getElementById('btn2-game');
 let header = document.getElementById('header');
 let body = document.getElementById('body');
+let menuImg = document.getElementById('menu-img');
 
 // Код для начала игры
 let st = () => {
     menu.classList.remove('hide');
     menu.classList.add('block');
+    
 };
 
 start.addEventListener('click', st);
 // Код для выхода из игры
 function ex() {
-    if (menu.classList.contains('hide') == false) 
-    { menu.classList.add('hide');
+    menu.classList.add('hide');
     menu.classList.remove('block');
-}};
+};
 exit.addEventListener('click', ex);
 
 // Вторая игра
@@ -31,7 +32,6 @@ let endBtn = document.getElementById('end-btn');
 let EndBtnsTwo = document.getElementById('btns');
 let secondbtns = document.getElementById('end-btns-second');
 let selectorBtn = document.querySelectorAll('#btns button');
-let hSecondEnd = document.getElementById('h-second');
 let menuDivEnd = document.getElementById('pod-end-div');
 let menuBtnEnd = document.getElementById('menu-btn-end');
 let backEnd = document.getElementById('back-end');
@@ -39,6 +39,7 @@ let puskEnd = document.getElementById('pusk-end');
 let scoreBtns = document.getElementById('score-btns');
 let time = document.getElementById('time');
 let resultGameTwo = document.getElementById('rez-score');
+let main = document.getElementById('main');
 let numScore = 0;
 let n = 60;
 
@@ -58,6 +59,17 @@ btnSlTwo.addEventListener('click', btns);
 function playosu() {
 let select;
 let selectorTwo;
+function frag() {
+    let fragment = new DocumentFragment()
+    let h2 = document.createElement('h2')
+    h2.id = 'h-second'
+    fragment.append(h2)
+    return fragment
+    }
+
+    main.prepend(frag())
+
+let hSecondEnd = document.getElementById('h-second')
 // Начало
     setTimeout(() => {
         menuBtnEnd.classList.add('end-div');
@@ -78,7 +90,7 @@ let selectorTwo;
         hSecondEnd.textContent = 'Пошло, поехало';
     }, 4000);
     setTimeout(() => {
-        hSecondEnd.textContent = '';
+        hSecondEnd.remove()
         backEnd.style.display = 'block';
     }, 4100)
 

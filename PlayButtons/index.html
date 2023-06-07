@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="style.css">
     <script defer src="index.js"></script>
 </head>
-    <body id="body" class="body" class="" class="">
+    <body  id="body" class="body" class="" class="">
         <!-- Start-game -->
         <header id="header" class="">
-            <button id="start-btn" class="starts">Start</button>
-            <button id="exit-btn" class="starts">Exit</button>
-            
+            <nav>
+            <button style="color:rgb(175, 233, 118);" id="start-btn" class="open">Start</button>
+            <button style="color:rgb(197, 32, 65);" id ="exit-btn" class="open">Exit</button>
+            </nav>
             <div id="menu" class="hide" >
-            <div id="style-menu-sl">
                <button id="btn2-game">Игра в кнопки</button>
             </div>
             </header>
@@ -23,98 +23,100 @@
 <div id="end-div" class="end-div">
     <div id="pod-end-div">
     <container><h2>Время:<h2 id="time"></h2></h2></container>
-    <container><h1 class ='row' >Счет:<h1 id="score-btns"></h1></h1></container>
+    <container><h2 class ='row' >Счет:<h2 id="score-btns"></h2></h2></container>
     <button id="end-btn">Начать игру</button>
     <button id="menu-btn-end" onClick="window.location.reload();">Вернуться в меню.</button>
     <button id="back-end" class="class-name" onclick="backEndFunc()" style="display: none;">Пауза</button>
     <button id="pusk-end" class="class-name" onclick="pusk()" style="display: none;">Продолжить</button>
     </div>
-    <h2 id="h-second"></h2>
-    
+    <main id='main'>
+
     <div id="btns" class="">
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
-        <button style="visibility: hidden;" class="btns" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
+        <button style="visibility: hidden;" class="btn" ></button>
     </div>
-    </div>
-       
+
+     </main>
+      </div>
+
     <footer id="footer-game-2" style="display: none;">
         <div id="footer-div2">
             <h1>Время вышло.</h1>
