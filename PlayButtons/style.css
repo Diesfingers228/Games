@@ -1,4 +1,8 @@
 @media (max-width: 1024px) {
+    * {
+        box-sizing: border-box;
+      }
+
     body {
         margin: 0%;
         padding: 0%;
@@ -56,11 +60,11 @@
     
     #btn2-game {
         font-size: 100%;
-        max-width: 50%;
+        max-width: 40%;
         border: none;
         border-radius: 10px;
-        color: rgb(208, 122, 248);
-        background-color: rgb(143, 135, 247);
+        color: rgb(192, 80, 243);
+        background-color: rgb(51, 40, 209);
     }
     
     /* Вторая игра */
