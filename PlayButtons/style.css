@@ -1,6 +1,6 @@
 @media (max-width: 1024px) {
     * {
-        box-sizing: border-box;
+        orientation: landscape;
       }
 
     body {
