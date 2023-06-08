@@ -331,7 +331,7 @@ nav {
 
 
 
-@media (min-device-width: 480px) and (max-device-width: 1024) and (min-device-height: 768px) {
+@media (min-device-width: 480px) and (max-device-width: 1024) and (min-device-height: 600px) {
     
 
 body {
