@@ -23,7 +23,7 @@
     }
     
     nav {
-        margin-top: 45%;
+        margin-top: 30%;
         display: flex;
         justify-content: center;
     }
@@ -166,7 +166,7 @@
 
 
 
-
+@media (min-width: 1025px) {
 /* Стилизация меню. */
 body {
     margin: 0%;
@@ -328,7 +328,7 @@ nav {
     height: 100%;
     
 }
-
+}
 
 
 
