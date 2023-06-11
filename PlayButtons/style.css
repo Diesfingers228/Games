@@ -332,7 +332,7 @@ nav {
 }
 
 
-@media (height > width) {
+@media (device-height > device-width) {
     body {
         display: none;
     }
