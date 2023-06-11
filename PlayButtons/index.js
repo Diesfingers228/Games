@@ -72,20 +72,19 @@ const screen = document.body
         return fragment
         }
         document.head.after(rotateScreen())
-
-        if (window.innerHeight < window.innerWidth) {
-            if (window.screen.width <= 1024) {
-            document.body.remove()
-            document.head.after(screen)
-            }
+        }
+}
+      if (window.innerHeight < window.innerWidth) {
+        if (window.screen.width <= 1024) {
+        document.body.remove()
+        document.head.after(screen)
         }
     }
-}
 };
 
-setInterval(() => {
+
     interval();
-}, 400)
+
 
 
 
