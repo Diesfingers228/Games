@@ -55,12 +55,9 @@ function btns() {
 btnSlTwo.addEventListener('click', btns);
 
 // Для мобильных устройств
-const heightScreen = window.screen.height;
-const widthScreen = window.screen.width;
 const screen = document.body
-if (heightScreen > widthScreen) {
+if (window.innerHeight > window.innerWidth) {
     document.body.remove()
-
     function rotateScreen() {
     let fragment = new DocumentFragment();
     let general = document.createElement('body');
@@ -74,9 +71,9 @@ if (heightScreen > widthScreen) {
     document.head.after(rotateScreen())
 }
 
-if (heightScreen < widthScreen) {
+if (window.innerHeight < window.innerWidth) {
     document.body.remove()
-    
+    document.head.after(screen)
 }
 // Для работы кнопок и записи счета, отсчет времени
 function playosu() {
