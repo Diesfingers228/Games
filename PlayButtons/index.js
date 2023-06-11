@@ -56,8 +56,10 @@ btnSlTwo.addEventListener('click', btns);
 
 // Для мобильных устройств
 const screen = document.body
-setInterval(() => {
+
+    function interval() {
     if (window.innerHeight > window.innerWidth) {
+        if (window.screen.width <= 1024) {
         document.body.remove()
         function rotateScreen() {
         let fragment = new DocumentFragment();
@@ -70,18 +72,17 @@ setInterval(() => {
         return fragment
         }
         document.head.after(rotateScreen())
+
+        if (window.innerHeight < window.innerWidth) {
+            if (window.screen.width <= 1024) {
+            document.body.remove()
+            document.head.after(screen)
+            }
+        }
     }
-} );
-
-
-
-setInterval(() => {
-    if (window.innerHeight < window.innerWidth) {
-        document.body.remove()
-        document.head.after(screen)
-    }
-})
-    
+}
+};
+    interval()
 
 // Для работы кнопок и записи счета, отсчет времени
 function playosu() {
