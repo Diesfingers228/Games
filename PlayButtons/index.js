@@ -64,6 +64,9 @@ if (heightScreen > widthScreen) {
     let fragment = new DocumentFragment();
     let general = document.createElement('body');
     general.style.backgroundImage = 'url(mobile.jpg)';
+    general.style.backgroundSize = 'cover';
+    general.style.backgroundPosition = 'fixed';
+    general.style.backgroundRepeat = 'no-repeat';
     fragment.append(general);
     return fragment
     }
