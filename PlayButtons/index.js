@@ -58,7 +58,8 @@ btnSlTwo.addEventListener('click', btns);
 const heightScreen = window.screen.height;
 const widthScreen = window.screen.width;
 if (heightScreen > widthScreen) {
-    document.body.remove();
+    const screen = document.body
+    document.body.remove()
 
     function rotateScreen() {
     let fragment = new DocumentFragment();
@@ -71,6 +72,11 @@ if (heightScreen > widthScreen) {
     return fragment
     }
     document.head.after(rotateScreen())
+}
+
+else {
+    document.body.remove()
+    document.head.after(screen)
 }
 // Для работы кнопок и записи счета, отсчет времени
 function playosu() {
