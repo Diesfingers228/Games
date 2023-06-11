@@ -82,7 +82,12 @@ const screen = document.body
     }
 }
 };
-    interval()
+
+setInterval(() => {
+    interval();
+}, 400)
+
+
 
 // Для работы кнопок и записи счета, отсчет времени
 function playosu() {
