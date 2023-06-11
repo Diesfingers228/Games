@@ -57,8 +57,8 @@ btnSlTwo.addEventListener('click', btns);
 // Для мобильных устройств
 const heightScreen = window.screen.height;
 const widthScreen = window.screen.width;
+const screen = document.body
 if (heightScreen > widthScreen) {
-    const screen = document.body
     document.body.remove()
 
     function rotateScreen() {
@@ -74,7 +74,7 @@ if (heightScreen > widthScreen) {
     document.head.after(rotateScreen())
 }
 
-else {
+else if (heightScreen < widthScreen) {
     document.body.remove()
     document.head.after(screen)
 }
