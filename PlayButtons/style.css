@@ -330,10 +330,3 @@ nav {
     
 }
 }
-
-
-@media (device-height > device-width) {
-    body {
-        display: none;
-    }
-}
