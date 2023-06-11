@@ -332,4 +332,8 @@ nav {
 }
 
 
-
+@media (height > width) {
+    body {
+        display: none;
+    }
+}
