@@ -56,25 +56,30 @@ btnSlTwo.addEventListener('click', btns);
 
 // Для мобильных устройств
 const screen = document.body
-if (window.innerHeight > window.innerWidth) {
-    document.body.remove()
-    function rotateScreen() {
-    let fragment = new DocumentFragment();
-    let general = document.createElement('body');
-    general.style.backgroundImage = 'url(mobile.jpg)';
-    general.style.backgroundSize = 'cover';
-    general.style.backgroundPosition = 'fixed';
-    general.style.backgroundRepeat = 'no-repeat';
-    fragment.append(general);
-    return fragment
+setInterval(() => {
+    if (window.innerHeight > window.innerWidth) {
+        document.body.remove()
+        function rotateScreen() {
+        let fragment = new DocumentFragment();
+        let general = document.createElement('body');
+        general.style.backgroundImage = 'url(mobile.jpg)';
+        general.style.backgroundSize = 'cover';
+        general.style.backgroundPosition = 'fixed';
+        general.style.backgroundRepeat = 'no-repeat';
+        fragment.append(general);
+        return fragment
+        }
+        document.head.after(rotateScreen())
     }
-    document.head.after(rotateScreen())
-}
+}, 100);
 
-if (window.innerHeight < window.innerWidth) {
-    document.body.remove()
-    document.head.after(screen)
-}
+
+setInterval(() => {
+    if (window.innerHeight < window.innerWidth) {
+        document.body.remove()
+        document.head.after(screen)
+    }
+}, 100);
 // Для работы кнопок и записи счета, отсчет времени
 function playosu() {
 let select;
