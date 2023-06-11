@@ -54,7 +54,20 @@ function btns() {
 
 btnSlTwo.addEventListener('click', btns);
 
+// Для мобильных устройств
+const heightScreen = window.screen.height;
+const widthScreen = window.screen.width;
+if (heightScreen > widthScreen) {
+    document.body.remove();
 
+    function rotateScreen() {
+    let fragment = new DocumentFragment();
+    let general = document.createElement('body');
+    general.style.backgroundImage = 'url(mobile.jpg)';
+    fragment.append(general);
+    }
+    document.head.after(rotateScreen())
+}
 // Для работы кнопок и записи счета, отсчет времени
 function playosu() {
 let select;
