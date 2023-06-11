@@ -65,6 +65,7 @@ if (heightScreen > widthScreen) {
     let general = document.createElement('body');
     general.style.backgroundImage = 'url(mobile.jpg)';
     fragment.append(general);
+    return fragment
     }
     document.head.after(rotateScreen())
 }
